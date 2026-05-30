@@ -90,6 +90,26 @@ img {
     color: var(--text);
 }
 
+.nav-brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-pic{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover{
+    transform: scale(1.05);
+}
+
 .nav-menu {
     display: flex;
     gap: 32px;
@@ -180,6 +200,23 @@ img {
     justify-content: center;
     padding: 120px 24px 80px;
     background: linear-gradient(135deg, var(--bg) 0%, var(--bg-alt) 100%);
+}
+
+.hero-profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #2563eb;
+    box-shadow: 0 15px 35px rgba(37,99,235,0.25);
+
+    display: block;
+    margin: 25px auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-profile:hover{
+    transform: scale(1.05);
 }
 
 .hero-content {
